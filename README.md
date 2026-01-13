@@ -1,16 +1,33 @@
-## Hi there 👋
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
 
-<!--
-**NimsaraWick/NimsaraWick** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img
+  src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1DA1F2&center=true&vCenter=true&width=520&lines=Hi+there!+I'm+Nimsara+Wickrmathanthri;Finding+rhythm+in+logic.;Ready+to+make+waves."
+  alt="Typing SVG"
+/>
+
+<h3 align="center" style="color:#1DA1F2;">
+🚀 Full Stack Developer | UI/UX Lover
+</h3>
+
+<p align="center">
+  <a href="https://github.com/nimsarawick">
+    <img src="https://img.shields.io/badge/GitHub-1DA1F2?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/nimsarawick/">
+    <img src="https://img.shields.io/badge/LinkedIn-1DA1F2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" height="3px" />
+</div>
+
+### 👨‍💻 About Me
+I’m a **3rd-year Computer Science undergraduate at UCSC** with interests in **full-stack development, system administration, and cybersecurity**.  
+I enjoy exploring new technologies and solving complex challenges.
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" height="3px" /> 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
+
