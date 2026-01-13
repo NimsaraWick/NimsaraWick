@@ -1,13 +1,13 @@
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
-
-
+<br/>
+<br/>
 
 <img
   src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1DA1F2&center=true&vCenter=true&width=520&lines=Hi+there!+I'm+Nimsara+Wickrmathanthri;Finding+rhythm+in+logic.;Ready+to+make+waves."
   alt="Typing SVG"
 />
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" height="3px" />
 <h3 align="center" style="color:#1DA1F2;">
 🚀 Full Stack Developer | UI/UX Lover
 </h3>
@@ -21,13 +21,7 @@
   </a>
 </p>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" height="3px" />
-</div>
 
-### 👨‍💻 About Me
-I’m a **3rd-year Computer Science undergraduate at UCSC** with interests in **full-stack development, system administration, and cybersecurity**.  
-I enjoy exploring new technologies and solving complex challenges.
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" height="3px" /> 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
 
