@@ -52,18 +52,6 @@
 
 <br/><br/><br/>
 
-<sub><b>CONTRIBUTION</b></sub>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake.svg" />
-</picture>
-
-<br/><br/><br/>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00A88F&height=110&section=footer" width="100%"/>
 
 </div>
