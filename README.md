@@ -28,7 +28,6 @@
 
 <br/><br/>
 
-<img src="assets/gemini.svg" alt="Built with Gemini" />
 
 <br/><br/><br/>
 
