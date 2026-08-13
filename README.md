@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00A88F&height=3" width="100%" />
 <br/>
 <br/>
 
@@ -14,14 +14,14 @@
 
 <p align="center">
   <a href="https://github.com/nimsarawick">
-    <img src="https://img.shields.io/badge/GitHub-1DA1F2?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-00A88F?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/nimsarawick/">
-    <img src="https://img.shields.io/badge/LinkedIn-1DA1F2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-00A88F?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
 
 
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1DA1F2&height=3" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00A88F&height=3" width="100%" />
 
