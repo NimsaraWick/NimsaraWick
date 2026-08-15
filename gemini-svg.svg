@@ -1,0 +1,107 @@
+<svg width="854" height="480" viewBox="0 0 854 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient using #00A88F -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00A88F"/>
+      <stop offset="100%" stop-color="#007563"/> <!-- Slightly darker shade for depth -->
+    </linearGradient>
+
+    <!-- Grid Pattern for Refraction -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+
+    <!-- 1. Complex Refractive Liquid Smoke Filter (Base) -->
+    <filter id="liquidSmoke" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" result="noise" seed="42">
+         <animate attributeName="baseFrequency" values="0.012; 0.015; 0.012" dur="20s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 3 -1" in="noise" result="enhancedNoise"/>
+      <feDisplacementMap in="SourceGraphic" in2="enhancedNoise" scale="45" xChannelSelector="R" yChannelSelector="G" result="displacedGraphics"/>
+      <feSpecularLighting in="enhancedNoise" surfaceScale="7" specularConstant="1.2" specularExponent="25" lighting-color="#aafff0" result="specMain">
+        <fePointLight x="100" y="-100" z="200">
+           <animate attributeName="x" values="100; 800; 100" dur="15s" repeatCount="indefinite"/>
+        </fePointLight>
+      </feSpecularLighting>
+      <feSpecularLighting in="enhancedNoise" surfaceScale="4" specularConstant="0.8" specularExponent="15" lighting-color="#004d41" result="specFill">
+        <fePointLight x="700" y="500" z="150">
+           <animate attributeName="x" values="700; 0; 700" dur="22s" repeatCount="indefinite"/>
+        </fePointLight>
+      </feSpecularLighting>
+      <feBlend mode="screen" in="specMain" in2="specFill" result="specularLighting"/>
+      <feComposite in="specularLighting" in2="displacedGraphics" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litScene"/>
+      <feOffset in="litScene" dx="2.5" dy="1.5" result="r_offset"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" in="r_offset" result="redSplit"/>
+      <feOffset in="litScene" dx="-2.5" dy="-1.5" result="b_offset"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" in="b_offset" result="blueSplit"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" in="litScene" result="greenSplit"/>
+      <feBlend mode="screen" in="redSplit" in2="blueSplit" result="rb"/>
+      <feBlend mode="screen" in="rb" in2="greenSplit" result="chromaticScene"/>
+    </filter>
+
+    <!-- 2. Volumetric Wispy Smoke Filter (New) -->
+    <filter id="wispySmoke" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Generate a low-frequency, highly detailed cloud pattern -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="5" result="smokeNoise">
+         <!-- Slowly morph the clouds to make them "boil" -->
+         <animate attributeName="baseFrequency" values="0.006 0.009; 0.008 0.012; 0.006 0.009" dur="25s" repeatCount="indefinite"/>
+      </feTurbulence>
+      
+      <!-- Map the noise to white, using the noise intensity to create transparency -->
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 1   <!-- Red   = White -->
+        0 0 0 0 1   <!-- Green = White -->
+        0 0 0 0 1   <!-- Blue  = White -->
+        1 0 0 0 -0.4 <!-- Alpha = based on the Red channel of the noise minus an offset to thin it out -->
+      " in="smokeNoise" result="smokeAlpha"/>
+      
+      <!-- Blur it slightly to make it softer and more gaseous -->
+      <feGaussianBlur in="smokeAlpha" stdDeviation="4" result="softSmoke"/>
+    </filter>
+
+    <!-- Animated Blobs (Under the liquid layer) -->
+    <linearGradient id="blobGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#004d41" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Vignette / Typography Guard -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="35%" stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Render Base Background -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+
+  <!-- 2. Apply Liquid Smoke Filter Group (The geometric refraction layer) -->
+  <g filter="url(#liquidSmoke)">
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <circle cx="200" cy="240" r="350" fill="url(#blobGlow)">
+      <animate attributeName="cx" values="200; 650; 200" dur="25s" repeatCount="indefinite" ease="ease-in-out"/>
+      <animate attributeName="cy" values="240; 100; 240" dur="30s" repeatCount="indefinite" ease="ease-in-out"/>
+    </circle>
+    <circle cx="650" cy="300" r="400" fill="url(#blobGlow)">
+      <animate attributeName="cx" values="650; 100; 650" dur="32s" repeatCount="indefinite" ease="ease-in-out"/>
+      <animate attributeName="cy" values="300; 450; 300" dur="27s" repeatCount="indefinite" ease="ease-in-out"/>
+    </circle>
+  </g>
+
+  <!-- 3. Apply Volumetric Drifting Smoke (The new cloudy/wispy effect) -->
+  <!-- opacity controls how thick the smoke is -->
+  <g opacity="0.35">
+    <rect x="-50%" y="-50%" width="200%" height="200%" fill="transparent" filter="url(#wispySmoke)">
+      <!-- This animation causes the smoke layer to slowly drift diagonally across the screen -->
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="200,-150" dur="40s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- 4. Apply Vignette to center focus (Darkens corners, makes text pop) -->
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+
+  <!-- 5. Typography / Content -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="800" fill="#ffffff" letter-spacing="4">
+    NIMSARA WICKRAMATHANTHRI
+  </text>
+</svg>

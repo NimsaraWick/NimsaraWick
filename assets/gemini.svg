@@ -1,0 +1,29 @@
+<svg width="120" height="32" viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="33%" stop-color="#9B72CB"/>
+      <stop offset="66%" stop-color="#D96570"/>
+      <stop offset="100%" stop-color="#F29900"/>
+    </linearGradient>
+    <linearGradient id="gemStar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8AB4F8"/>
+      <stop offset="100%" stop-color="#4285F4"/>
+    </linearGradient>
+  </defs>
+  <!-- pill background -->
+  <rect width="120" height="32" rx="6" fill="#0D1117"/>
+  <rect x="0.5" y="0.5" width="119" height="31" rx="5.5" fill="none" stroke="url(#gemGrad)" stroke-opacity="0.5"/>
+
+  <!-- Gemini star icon — four-pointed star -->
+  <g transform="translate(14, 16)">
+    <!-- vertical lobe -->
+    <path d="M0,-10 C1.5,-5 1.5,5 0,10 C-1.5,5 -1.5,-5 0,-10Z" fill="url(#gemStar)"/>
+    <!-- horizontal lobe -->
+    <path d="M-10,0 C-5,1.5 5,1.5 10,0 C5,-1.5 -5,-1.5 -10,0Z" fill="url(#gemStar)" opacity="0.8"/>
+  </g>
+
+  <!-- text -->
+  <text x="30" y="11" font-family="'Google Sans', Arial, sans-serif" font-size="8" font-weight="500" fill="#8AB4F8" letter-spacing="1.5">BUILT WITH</text>
+  <text x="30" y="24" font-family="'Google Sans', Arial, sans-serif" font-size="11" font-weight="700" fill="url(#gemGrad)" letter-spacing="1">GEMINI</text>
+</svg>

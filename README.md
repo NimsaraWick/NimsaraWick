@@ -26,6 +26,10 @@
   <img src="https://img.shields.io/badge/Portfolio-00A88F?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
 
+<br/><br/>
+
+<img src="assets/gemini.svg" alt="Built with Gemini" />
+
 <br/><br/><br/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00A88F&height=1" width="60" />
@@ -48,12 +52,15 @@
 
 <br/><br/><br/>
 
-<sub><b>ACTIVITY</b></sub>
+<sub><b>CONTRIBUTION</b></sub>
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=nimsarawick&show_icons=true&theme=dark&bg_color=0D1117&title_color=00A88F&icon_color=00A88F&text_color=C9D1D9&border_color=00A88F&border_radius=10" width="48%" />
-<img src="https://streak-stats.demolab.com/?user=nimsarawick&theme=dark&background=0D1117&border=00A88F&stroke=00A88F&ring=00A88F&fire=00A88F&currStreakLabel=00A88F&sideLabels=C9D1D9&currStreakNum=F3F6F5&sideNums=F3F6F5&dates=8590A6" width="48%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/nimsarawick/nimsarawick/output/github-contribution-grid-snake.svg" />
+</picture>
 
 <br/><br/><br/>
 
